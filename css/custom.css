@@ -1,0 +1,122 @@
+.section {
+    padding: 8rem 0 7rem;
+    text-align: center;
+}
+.section-heading,
+.section-description {
+    margin-bottom: 1.2rem;
+}
+
+.menu {
+  background-color: rgba(256,256,256,0.9);
+  margin-top: 3%;
+  opacity: 0.85;
+  padding: 30px;
+}
+
+.menuitems {
+  margin-top: 8%;
+  text-align: right;
+}
+
+.menulogo {
+  display: block;
+  margin-top: 1%;
+}
+
+.header {
+    background-image: url('/images/wpgUrQfo_400x400.jpg');
+    background-size: cover;
+    color: #fff;
+    padding-bottom: 5rem;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #1c184b;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #10b5b9;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+a:hover {
+  color: inherit;
+}
+
+.content {
+  /* this is needed or the background will be offset by a few pixels at the top */
+  overflow: auto;
+  position: relative;
+  background-position: 55% 0%;
+}
+
+.content::before {
+  content: "";
+  position: fixed;
+  left: -5%;
+  top: -5%;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url("/images/bg-option-2.svg");
+  background-size:cover;
+  height: 110%;
+  width: 110%;
+
+  /* -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px); */
+}
+
+@media (max-width: 900px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  body{
+    background-image: url("/images/bg-option-2.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+  }
+
+  .menu {
+    background-color: rgba(256,256,256,0.9);
+    margin-top: 3%;
+    opacity: 0.85;
+    padding: 30px;
+  }
+  
+  .menuitems {
+    margin-top: 8%;
+    text-align: center;
+  }
+  
+  .menulogo {
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
