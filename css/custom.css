@@ -25,7 +25,7 @@
 }
 
 .header {
-    background-image: url('./images/wpgUrQfo_400x400.jpg');
+    background-image: url('images/wpgUrQfo_400x400.jpg');
     background-size: cover;
     color: #fff;
     padding-bottom: 5rem;
@@ -80,7 +80,7 @@ a:hover {
   z-index: -1;
 
   display: block;
-  background-image: url("./images/bg-option-2.svg");
+  background-image: url("images/bg-option-2.svg");
   background-size:cover;
   height: 110%;
   width: 110%;
@@ -95,7 +95,7 @@ a:hover {
 @media (max-width: 900px) {
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
   body{
-    background-image: url("./images/bg-option-2.svg");
+    background-image: url("images/bg-option-2.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left top;
